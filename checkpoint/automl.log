@@ -1,0 +1,74 @@
+2022-11-14 19:04:17.539 - INFO - 43876 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetBestChild
+2022-11-14 19:04:17.573 - INFO - 43876 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetChildren
+2022-11-14 19:04:17.738 - INFO - 43876 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=165.12[ms]
+2022-11-14 19:04:17.799 - INFO - 43876 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetBestChild, HowEnded=Success, Duration=260.81[ms]
+2022-11-14 19:04:17.800 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_perform_best_run_explain_model:84 - Computing model explanations for best run AutoML_a8c66d27-3f6c-488f-8d6f-7df5558d8ff3_24 on local
+2022-11-14 19:04:17.801 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver_factory._get_model_explain_driver:67 - Constructing model explain config for classification
+2022-11-14 19:04:17.802 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:140 - The dependent model explainability packages are:- {"azureml-train-automl-runtime": "1.44.0", "azureml-interpret": "1.44.0", "interpret-community": "0.26.0", "interpret-core": "0.2.7"}
+2022-11-14 19:04:17.803 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_helper._check_model_explain_packages:182 - All dependent explainability packages are importable
+2022-11-14 19:04:17.803 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:152 - [RunId:AutoML_a8c66d27-3f6c-488f-8d6f-7df5558d8ff3_24]Start auto mode model explanations
+2022-11-14 19:04:18.274 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 1956851712
+2022-11-14 19:04:18.274 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 2072965120
+2022-11-14 19:04:18.275 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 137.922554
+2022-11-14 19:04:18.275 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 481.908305
+2022-11-14 19:04:18.422 - INFO - 43876 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping enabled: False
+2022-11-14 19:04:18.423 - INFO - 43876 - azureml.automl.runtime.featurization.data_transformer.__init__:191 - Feature sweeping timeout: 86400
+2022-11-14 19:04:18.678 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver._rehydrate_automl_fitted_model:116 - Successfully downloaded and loaded the model for explanations
+2022-11-14 19:04:18.696 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2022-11-14 19:04:18.696 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: featurization/data/full_training_dataset
+2022-11-14 19:04:18.787 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_pandas_dataframe:152 - parquet to ndarray. Memory: 1140.28 kb,Disk: 237.51 kb
+2022-11-14 19:04:18.787 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:89 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=91.08[ms]
+2022-11-14 19:04:18.788 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2022-11-14 19:04:18.788 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: featurization/data/full_validation_dataset
+2022-11-14 19:04:18.788 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:89 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.66[ms]
+2022-11-14 19:04:18.789 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2022-11-14 19:04:18.789 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: featurization/data/X_valid
+2022-11-14 19:04:18.806 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: featurization/data/y_valid
+2022-11-14 19:04:18.825 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: featurization/data/sample_weight_valid
+2022-11-14 19:04:18.843 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:89 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=53.85[ms]
+2022-11-14 19:04:18.853 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_helper._automl_pick_evaluation_samples_explanations:163 - Successfully downsampled the evaluation samples using stratified splits
+2022-11-14 19:04:18.853 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.setup_model_explain_train_data:89 - Preparation of training data for model explanations completed.
+2022-11-14 19:04:18.853 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2022-11-14 19:04:18.854 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: X_raw
+2022-11-14 19:04:18.926 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_pandas_dataframe:152 - parquet to ndarray. Memory: 2104.90 kb,Disk: 337.87 kb
+2022-11-14 19:04:18.927 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: y_raw
+2022-11-14 19:04:18.951 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_pandas_dataframe:152 - parquet to ndarray. Memory: 175.54 kb,Disk: 4.53 kb
+2022-11-14 19:04:18.952 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_numpy_array:181 - Deserialized parquet file into a numpy array of shape: (21926, 1)
+2022-11-14 19:04:18.952 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_numpy_array:189 - parquet to ndarray. Memory: 175.41 kb,Disk: 4.53 kb
+2022-11-14 19:04:18.952 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_single_dim_numpy_array:211 - Deserialized parquet file into a single dimensional array of shape: (21926,)
+2022-11-14 19:04:18.953 - INFO - 43876 - azureml.automl.runtime.shared._parqueter.load_single_dim_numpy_array:218 - parquet to ndarray. Memory: 175.41 kb,Disk: 4.53 kb
+2022-11-14 19:04:18.953 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: X_raw_valid
+2022-11-14 19:04:18.974 - INFO - 43876 - azureml.automl.runtime.shared.lazy_file_cache_store.get:426 - Getting data for key: y_raw_valid
+2022-11-14 19:04:18.992 - INFO - 43876 - azureml.automl.runtime.shared.cache_store._log_activity:89 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=139.03[ms]
+2022-11-14 19:04:19.003 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_helper._automl_pick_evaluation_samples_explanations:163 - Successfully downsampled the evaluation samples using stratified splits
+2022-11-14 19:04:19.003 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.setup_model_explain_train_data:103 - Preparation of raw data for model explanations completed.
+2022-11-14 19:04:19.004 - INFO - 43876 - azureml.train.automl.runtime.automl_explain_utilities._get_unique_classes:882 - Got class labels from the AutoML estimator
+2022-11-14 19:04:19.004 - INFO - 43876 - azureml.train.automl.runtime.automl_explain_utilities._get_unique_classes:894 - The number of unique classes in training data are 2
+2022-11-14 19:04:19.004 - INFO - 43876 - azureml.train.automl.runtime.automl_explain_utilities._automl_pick_surrogate_model_and_set_params:1267 - The number of core being set for explainable model is: 1
+2022-11-14 19:04:19.005 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:198 - Dimensionality of engineered initialization samples:- 21926 samples 11 features
+2022-11-14 19:04:19.005 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:201 - Dimensionality of engineered evaluation samples:- 5000 samples 11 features
+2022-11-14 19:04:19.005 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:206 - Dimensionality of raw evaluation samples:- 5000 samples 11 features
+2022-11-14 19:04:19.005 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:211 - Dimensionality of feature map:- 11 raw features 11 engineered features
+2022-11-14 19:04:19.005 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:218 - Number of engineered feature names are:- 11
+2022-11-14 19:04:19.006 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_driver.log_explanation_data_stats:222 - Number of raw feature names are:- 11
+2022-11-14 19:04:20.405 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_model_explain_helper._log_blackbox_explainer_replication_measure:236 - The replication score for teacher model VotingEnsemble with surrogate model LightGBM is:- 0.9574
+2022-11-14 19:04:28.307 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - memory usage 1962795008
+2022-11-14 19:04:28.308 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_memory_usage:62 - child memory usage 2078916608
+2022-11-14 19:04:28.316 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - cpu time 147.532282
+2022-11-14 19:04:28.324 - INFO - 43876 - azureml.automl.core.systemusage_telemetry._log_cpu_usage:71 - child cpu time 481.908305
+2022-11-14 19:04:33.969 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:212 - Computation of engineered feature importance completed.
+2022-11-14 19:04:37.215 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:237 - Computation of raw feature importance completed.
+2022-11-14 19:04:37.216 - INFO - 43876 - azureml.train.automl.runtime._automl_model_explain.automl_auto_mode_model_explain._automl_auto_mode_explain_model:239 - [RunId:AutoML_a8c66d27-3f6c-488f-8d6f-7df5558d8ff3_24]End auto mode model explanation
+2022-11-14 19:04:37.308 - INFO - 43876 - azureml.automl.core.systemusage_telemetry.stop:49 - Stopping usage telemetry collection
+2022-11-14 19:04:37.354 - INFO - 43876 - azureml.train.automl.runtime._experiment_drivers.local_experiment_driver.start:331 - Parent Run AutoML_a8c66d27-3f6c-488f-8d6f-7df5558d8ff3 Complete.
+2022-11-14 19:04:37.355 - INFO - 43876 - azureml.automl.runtime.experiment_store.reset:1189 - Resetting ExpeirmentStore ID: 139783017750736
+2022-11-14 19:04:38.088 - INFO - 43876 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetOutput
+2022-11-14 19:04:38.122 - INFO - 43876 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetOutput
+2022-11-14 19:04:38.149 - INFO - 43876 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetChildren
+2022-11-14 19:04:38.309 - INFO - 43876 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=159.64[ms]
+2022-11-14 19:04:38.407 - INFO - 43876 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=284.89[ms]
+2022-11-14 19:04:38.408 - INFO - 43876 - azureml.train.automl._model_download_utilities._log_activity:55 - ActivityStarted: DownloadModel
+2022-11-14 19:04:39.340 - INFO - 43876 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping enabled: False
+2022-11-14 19:04:39.340 - INFO - 43876 - azureml.automl.runtime.featurization.data_transformer.__init__:191 - Feature sweeping timeout: 86400
+2022-11-14 19:04:39.629 - INFO - 43876 - azureml.train.automl._model_download_utilities._log_activity:89 - ActivityCompleted: Activity=DownloadModel, HowEnded=Success, Duration=1221.8[ms]
+2022-11-14 19:04:39.630 - INFO - 43876 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=1542.18[ms]
