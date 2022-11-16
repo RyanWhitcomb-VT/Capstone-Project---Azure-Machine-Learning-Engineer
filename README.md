@@ -30,7 +30,9 @@ The dataset was downloaded from Kaggle and manually updated into Azure via the D
 The autoML settings were 3 cross validations, using weighted AUC as the primary metric, and it enabled early stopping while also having a timeout of 0.25 hours.  Again, this was for a classification model predicting the home team would win.
 
 ### Results
-The model selected was a Voting Classifier and it finished with an AUC of 0.95.  The voting models use many different estimators, such as a lightGBM classifier, and each one has its own set of hyperparameters.  What the model AUC tells me is that the data used to make the prediction was too highly correlated with the outcome.  Clearly a team that shoots better will score more and has a higher chance to win.  I was hoping that we would be able to see more interaction between key features that lead to a win.  Additionally, more data columns could be used in the future to have a better model, even if that might mean a lower AUC.
+The model selected was a Voting Classifier and it finished with an AUC of 0.95.  The voting models use many different estimators, such as a lightGBM classifier, and each one has its own set of hyperparameters.  What the model AUC tells me is that the data used to make the prediction was too highly correlated with the outcome.  Clearly a team that shoots better will score more and has a higher chance to win.  I was hoping that we would be able to see more interaction between key features that lead to a win.  Additionally, more data columns could be used in the future to have a better model, even if that might mean a lower AUC.  
+
+For the autoML part of the experiment I can improve model performance by taking advantage of the featurization capabilities of AzureML.  Additionally this can improve imputation procedures for missing data. I think an obvious area of improvement is also allowing the timeout to be much longer.  As autoML has more time to run it will be able to expand upon the complexities and intracies of a voting model as mentioned earlier.
 
 ![automl_rundetails](images/automl_rundetails.PNG)
 ![automl_best_run](images/automl_best_run.PNG)
