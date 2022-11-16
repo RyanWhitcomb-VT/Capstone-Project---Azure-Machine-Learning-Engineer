@@ -32,8 +32,8 @@ The autoML settings were 3 cross validations, using weighted AUC as the primary 
 ### Results
 The model finished with an AUC of 0.95.  What this tells me is that the data used to make the prediction was too highly correlated with the outcome.  Clearly a team that shoots better will score more and has a higher chance to win.  I was hoping that we would be able to see more interaction between key features that lead to a win.  Additionally, more data columns could be used in the future to have a better model, even if that might mean a lower AUC.
 
-![automl_rundetails](images/automl_rundetails.png)
-![automl_best_run](images/automl_best_run.png)
+![automl_rundetails](images/automl_rundetails.PNG)
+![automl_best_run](images/automl_best_run.PNG)
 
 ## Hyperparameter Tuning
 After the automl run I was hoping that simpler feature interaction could provide more explainability of the features, so I chose a simple logistic regression for classification.  I adjusted the inverse of regulation strength and max iterations the model would run.  I selected a basic set of ranges using a RandomParameterSampling method. For the inverse regulation strength that was [0.01, 0.1, 1] and max iterations was [10, 20, 50, 100, 250].
@@ -42,13 +42,13 @@ After the automl run I was hoping that simpler feature interaction could provide
 ### Results
 The best model had an AUC of 0.92 with an inverse regulation strength coefficient of 0.1 and the number of maximum iterations set to 100.  Again, this AUC is clearly still too high based on the dataset.  Improvements to the data will lead to an improved model.
 
-![hyperdrive_rundetails](images/hyperdrive_rundetails.png)
-![hyperdrive_model_params](images/hyperdrive_model_params.png)
+![hyperdrive_rundetails](images/hyperdrive_rundetails.PNG)
+![hyperdrive_model_params](images/hyperdrive_model_params.PNG)
 
 ## Model Deployment
 The hyperdrive final model was the model I chose to deploy and query for testing.  From the feature set listed above, providing a float value for the data and passing the data along in JSON format will hit the endpoint and return a model value.  This value will give the prediction for whether the home team is projected to win.
 
-![hyperdrive_endpoint](images/hyperdrive_endpoint.png)
+![hyperdrive_endpoint](images/hyperdrive_endpoint.PNG)
 
 ## Screen Recording
 Working model demo is found here:
