@@ -14,5 +14,5 @@ def run(data):
     df = pd.read_json(data)
     result = model.predict(df)
 
-    return model_path, json.dumps({'result': result.to_list()})
+    return json.dumps({'result': result.tolist()})
     
